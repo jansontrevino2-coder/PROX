@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Safe Proxy</title><link rel="stylesheet" href="/styles.css"></head>
+<body><main><section class="browser"><header><div class="dots"><i></i><i></i><i></i></div><h1>Safe Proxy</h1></header>
+<form id="bar"><input id="url" type="url" value="https://example.com" required autocomplete="off" spellcheck="false" aria-label="Destination URL"><button>Open</button></form>
+<div id="status">Public HTTPS destinations only</div><iframe id="view" title="Proxied page" sandbox="allow-scripts allow-same-origin"></iframe></section>
+<p class="note">Public HTTPS sites are supported without an allowlist. Local/private networks, custom ports, credentials in URLs, forms, and oversized responses are blocked.</p></main><script src="/app.js"></script></body></html>
